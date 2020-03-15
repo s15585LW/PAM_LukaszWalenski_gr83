@@ -2,7 +2,6 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
@@ -35,66 +34,45 @@
 
         app:layout_constraintTop_toBottomOf="@+id/Header1" />
 
-    <Button
-        android:id="@+id/btn_BMI"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-
-        android:layout_marginLeft="52dp"
-        android:text="BMI"
-        android:layout_marginTop="50dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Header1" />
-
-    <Button
-
-        android:id="@+id/btn_dieta"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-
-        android:text="Dieta"
-
-        app:layout_constraintStart_toEndOf="@+id/btn_BMI"
-        app:layout_constraintTop_toTopOf="@+id/btn_BMI" />
-
-    <Button
-        android:id="@+id/btn_Kalorie"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-
-        android:text="Kalorie"
-        app:layout_constraintEnd_toEndOf="@+id/btn_BMI"
-        app:layout_constraintTop_toBottomOf="@+id/btn_BMI" />
-
-    <Button
-        android:id="@+id/btn_Exit"
-
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-
-        android:text="ZAMKNIJ"
-        app:layout_constraintEnd_toEndOf="@+id/btn_dieta"
-        app:layout_constraintTop_toBottomOf="@+id/btn_BMI" />
-
     <TextView
-        android:id="@+id/extra_text"
+        android:id="@+id/BMI_recipt_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aplikacja mobilna wykonana przez studneta PJATK @S15585"
-        android:textColor="#fff"
+        android:text="Rekomendowany przepis"
+        android:layout_marginTop="42dp"
         android:textAlignment="center"
+        android:textColor="#fff"
         android:textSize="22dp"
-        android:layout_marginBottom="50dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+
+        app:layout_constraintTop_toBottomOf="@+id/BMI_txt2" />
+
+    <TextView
+        android:id="@+id/BMI_przepis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tresc przepisu:"
+        android:layout_marginTop="42dp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/BMI_recipt_header" />
+
+    <Button
+
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Wróć"
+        app:layout_constraintEnd_toEndOf="@+id/BMI_przepis"
+        app:layout_constraintRight_toRightOf="@+id/BMI_przepis"
+        app:layout_constraintStart_toStartOf="@+id/BMI_przepis"
+        app:layout_constraintTop_toBottomOf="@+id/BMI_przepis" />
+
 
 </android.support.constraint.ConstraintLayout>
