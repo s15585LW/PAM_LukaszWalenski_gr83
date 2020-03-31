@@ -32,7 +32,7 @@
     <string name="korona_txt_subtitle">Co cię nie zabije to cię wzmocni</string>
     <string name="korona_btn_quiz">QUIZ</string>
     <string name="korona_btn_gra">GRA</string>
-    <string name="korona_btn_chart">WYKRESY</string>
+    <string name="korona_btn_chart">WYKRES</string>
 
 
     <string name="number_of_choices">Number of Choices</string>
