@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="PYTANIA">
+        <item>Pytanie_1</item>
+        <item>Pytanie_2</item>
+        <item>Pytanie_3</item>
+        <item>Pytanie_4</item>
+        <item>Pytanie_5</item>
+        <item>Pytanie_6</item>
+        <item>Pytanie_7</item>
+    </string-array>
+
+    <string-array name="Pytanie_1">
+        <item>W jakim Państwie rozpoczeła sie epidemia?</item>
+        <item>Chiny</item>
+        <item>Tajlandia</item>
+        <item>Niemcy</item>
+        <item>Filipiny</item>
+        <item>Polska</item>
+        <item>Hiszpania</item>
+        <item>Japonia</item>
+        <item>Nibylandia</item>
+        <item>Włochy</item>
+    </string-array>
+
+    <string-array name="Pytanie_2">
+        <item>Od jakiego zwierzecia zarazona została pierwsza osoba?</item>
+        <item>Nietoperz</item>
+        <item>Kot</item>
+        <item>Szczur</item>
+        <item>Ryś</item>
+        <item>Złota rybka</item>
+        <item>Surykatka</item>
+        <item>Piesek preriowy</item>
+        <item>Barsuk</item>
+        <item>Kangur</item>
+    </string-array>
+
+    <string-array name="Pytanie_3">
+        <item>Jaką nazwę nosi wirus?</item>
+        <item>SARS-CoV-2</item>
+        <item>ABC-CoV-2</item>
+        <item>PJATK-CoV-2</item>
+        <item>NATO-CoV-2</item>
+        <item>PAMO-CoV-2</item>
+        <item>SS-CoV-2</item>
+        <item>SARS-CoV-3000</item>
+        <item>HIV-CoV-2</item>
+        <item>EBOLA-CoV-2</item>
+    </string-array>
+
+    <string-array name="Pytanie_4">
+        <item>Jaką chorobę wywołuje wirus?</item>
+        <item>Covid-19</item>
+        <item>Bobovid-18</item>
+        <item>Smakovid-10</item>
+        <item>Covid-30</item>
+        <item>Rodowid-19</item>
+        <item>Bobovid-30</item>
+        <item>Smakovid-30</item>
+        <item>Covid-17</item>
+        <item>Bobovid-17</item>
+    </string-array>
+
+    <string-array name="Pytanie_5">
+        <item>Kiedy WHO ogłosiło stan pandemii?</item>
+        <item>11 marzec 2020</item>
+        <item>09 marzec 2020</item>
+        <item>07 marzec 2020</item>
+        <item>06 marzec 2020</item>
+        <item>14 marzec 2020</item>
+        <item>05 marzec 2020</item>
+        <item>16 marzec 2020</item>
+        <item>18 marzec 2020</item>
+        <item>03 marzec 2020</item>
+    </string-array>
+
+    <string-array name="Pytanie_6">
+        <item>Który organ jest atakowany przez Wirusa?</item>
+        <item>Płuca</item>
+        <item>Serce</item>
+        <item>Żołądek</item>
+        <item>Wątroba</item>
+        <item>Trzustka</item>
+        <item>Mózg</item>
+        <item>Nerka</item>
+        <item>Jelita</item>
+        <item>Sledziona</item>
+    </string-array>
+
+    <string-array name="Pytanie_7">
+        <item>Z jakiego miasta pochodzi pacjent ZERO</item>
+        <item>Zielona Góra</item>
+        <item>Tczew</item>
+        <item>Mrągowo</item>
+        <item>Licheń</item>
+        <item>Ciechocinek</item>
+        <item>Warszawa</item>
+        <item>Wąchock</item>
+        <item>Wirusowo</item>
+        <item>Pelplin</item>
+    </string-array>
+
+
+</resources>

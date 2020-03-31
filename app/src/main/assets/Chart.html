@@ -1,0 +1,59 @@
+<html>​
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Zarażeń', 'Zgony'],
+          ['01-03-2020', 0, 0],
+          ['02-03-2020', 0, 0],
+          ['03-03-2020', 0, 0],
+          ['04-03-2020', 0, 0],
+          ['05-03-2020', 0, 0],
+          ['06-03-2020', 5, 0],
+          ['07-03-2020', 6, 0],
+          ['08-03-2020', 11, 0],
+          ['09-03-2020', 17, 0],
+          ['10-03-2020', 22, 0],
+          ['11-03-2020', 31, 0],
+          ['12-03-2020', 51, 1],
+          ['13-03-2020', 68, 2],
+          ['14-03-2020', 104, 2],
+          ['15-03-2020', 125, 3],
+          ['16-03-2020', 177, 3],
+          ['17-03-2020', 238, 4],
+          ['18-03-2020', 287, 5],
+          ['19-03-2020', 355, 5],
+          ['20-03-2020', 425, 7],
+          ['21-03-2020', 536, 8],
+          ['22-03-2020', 634, 10],
+          ['23-03-2020', 749, 14],
+          ['24-03-2020', 901, 16],
+          ['25-03-2020', 1051, 16],
+          ['26-03-2020', 1221, 17],
+          ['27-03-2020', 1389, 18],
+          ['28-03-2020', 1642, 22],
+          ['29-03-2020', 1862, 26],
+          ['30-03-2020', 2007, 29],
+          ['31-03-2020', 2130, 31]
+        ]);
+
+        var options = {
+                title: 'Ilość zachorowań w polsce',
+                legend: {position: 'in'},
+                bars: 'horizontal' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+</head>
+<body>
+<div id="barchart_material" style="width: 400px; height: 400px;"></div>
+</body>
+</html>

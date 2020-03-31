@@ -1,0 +1,19 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="first_preferencescreen">
+
+    <PreferenceCategory android:title="Ustawienia gry">
+        <ListPreference
+            android:key="pref_numberOfChoices"
+            android:dialogTitle="Dialog title"
+            android:title="Ilośc odpowiedzi"
+            android:entries="@array/ilosc_odpowiedzi"
+            android:entryValues="@array/ilosc_odpowiedzi"
+            android:summary="Kliknij aby zmienić"
+            android:defaultValue="4" />
+    </PreferenceCategory>
+    <Preference
+        android:key="Info"
+        android:title="Autor: @S15585"
+    />
+</PreferenceScreen>

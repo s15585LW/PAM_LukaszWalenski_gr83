@@ -6,14 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
-import java.security.DomainCombiner;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn_gotoBMI, btn_gotoDieta, btn_gotoKalorie, btn_Exit;
+    Button btn_gotoBMI, btn_gotoDieta, btn_gotoKalorie, btn_Exit, btn_Korona;
     Double BMI_status, WAGA_status, WZROST_status, PLEC_status, WIEK_status;
     TextView Txt_v_bmi;
 
@@ -30,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         btn_gotoDieta = findViewById(R.id.btn_dieta);
         btn_gotoKalorie = findViewById(R.id.btn_Kalorie);
         btn_Exit = findViewById(R.id.btn_Exit);
+        btn_Korona = findViewById(R.id.btn_korona);
 
         btn_gotoBMI.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,11 +69,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btn_Korona.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                launchKoronaActivity();
+            }
+        });
+
     }
 
     private void launchBMIActivity() {
 
         Intent intent = new Intent(this, BMIActivity.class);
+        startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE);
+
+    }
+
+    private void launchKoronaActivity() {
+
+        Intent intent = new Intent(this, KoronaMenuActivity.class);
         startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE);
 
     }
